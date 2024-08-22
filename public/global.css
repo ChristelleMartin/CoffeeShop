@@ -3,16 +3,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://example.com/coffee-beans-background.jpg'); /* Remplacez par le lien de l'image des grains de café */
+    background-image: url("./img/coffee-beans-background.jpg"); 
     background-size: cover;
     background-position: center;
-    color: #ffffff;
 }
 
 nav {
     background-color: #6f4e37;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+}
+
+nav.footer {
+    padding: 50px;
 }
 
 nav a {
@@ -22,15 +25,21 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #352519;
+}
+
 .header {
     text-align: center;
     padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(214, 213, 213, 0.678);
 }
 
 .header h1 {
     font-size: 50px;
+    font-weight: bold;
     margin: 0;
+    color: #352519;
 }
 
 .section {
@@ -39,12 +48,29 @@ nav a {
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section h2 {
     color: #6f4e37;
     font-size: 36px;
     margin-bottom: 20px;
+}
+
+.left {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .products {
@@ -75,4 +101,17 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     margin-top: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #6f4e37;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #352519;
+    color: antiquewhite;
 }

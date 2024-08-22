@@ -14,8 +14,8 @@
     </div>
 
     <nav>
-        <a href="#">Accueil</a>
+        <a href="./">Accueil</a>
         <a href="#">À propos</a>
-        <a href="#">Produits</a>
+        <a href="./products">Produits</a>
         <a href="#">Contact</a>
     </nav>

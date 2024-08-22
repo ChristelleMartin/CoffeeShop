@@ -25,6 +25,13 @@ Gestion de la logique PHP
 MCD / Mocodo / Entités / Relations ...
 Créer la bdd dans Adminer
 
+products
+id :unique en AI
+title : varchar(50)
+subtitle : varchar(255)
+picture : varchar(255)
+
+
 ### 5e étape : créer les modèles pour récupérer les données de la BDD
 Models/Product.php => lié à la table product de la bdd
 
