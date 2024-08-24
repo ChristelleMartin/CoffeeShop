@@ -115,3 +115,29 @@ nav a:hover {
     background-color: #352519;
     color: antiquewhite;
 }
+
+.recipe {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe h2 {
+    color: #6f4e37;
+    margin-top: 0;
+}
+
+.recipe h3 {
+    color: #6f4e37;
+    margin-bottom: 10px;
+}
+
+.recipe ul {
+    padding-left: 20px;
+}
+
+.recipe p {
+    margin-top: 0;
+}

@@ -15,7 +15,7 @@
 
     <nav>
         <a href="./">Accueil</a>
-        <a href="#">À propos</a>
         <a href="./products">Produits</a>
+        <a href="./recipes">Idées de recettes</a>
         <a href="#">Contact</a>
     </nav>

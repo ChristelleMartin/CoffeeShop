@@ -20,6 +20,15 @@
             $this->show("products");
         }
 
+        /**
+         * Affichage de la page recipes
+         *
+         * @return void
+         */
+        public function recipespage() {
+            $this->show("recipes");
+        }
+
         private function show($viewPage, $viewData = []) {
 
             require __DIR__ . "/../Views/partials/header.tpl.php";

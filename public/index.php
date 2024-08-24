@@ -13,8 +13,20 @@ $router->setBasePath("/CoffeeShop/public");
 // var_dump($router); 
 
 // Définir les URLs avec la fonction native de PHP
-$router->map('GET', '/', [ 'method' => 'homepage', 'controller' => 'mainController'], 'page_index');
-$router->map('GET', '/products', [ 'method' => 'productspage', 'controller' => 'mainController'], 'page_products');
+$router->map('GET', '/', [ 
+    'method' => 'homepage', 
+    'controller' => 'mainController'], 
+    'page_index');
+
+$router->map('GET', '/products', [ 
+    'method' => 'productspage', 
+    'controller' => 'mainController'], 
+    'page_products');
+
+$router->map('GET', '/recipes', [ 
+    'method' => 'recipespage', 
+    'controller' => 'mainController'], 
+    'page_recipes');
 
 // $match va contenir soit un tableau soit un booléen = false
 $match = $router->match();
