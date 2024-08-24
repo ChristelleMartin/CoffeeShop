@@ -8,7 +8,7 @@
          * @return void
          */
         public function homepage() {
-            $this->show("homepage");
+            $this->show("content_homepage");
         }
 
         /**
@@ -17,7 +17,12 @@
          * @return void
          */
         public function productspage() {
-            $this->show("products");
+            
+            // Instancier le model Product qui interagit avec la DB
+            $productModel = new Product();
+            $productsFromModel = $productModel->findAll();
+
+            $this->show("content_products", [ "products" => $productsFromModel ]);
         }
 
         /**
@@ -26,7 +31,7 @@
          * @return void
          */
         public function recipespage() {
-            $this->show("recipes");
+            $this->show("content_recipes");
         }
 
         private function show($viewPage, $viewData = []) {

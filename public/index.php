@@ -7,10 +7,15 @@ require __DIR__ . "/../vendor/autoload.php";
 // On charge les fichiers Controller
 require __DIR__ . "/../app/Controllers/mainController.php";
 
+// On charge les fichiers Models et Utils
+require __DIR__ . "/../app/Utils/Database.php";
+require __DIR__ . "/../app/Models/Product.php";
+
 $router = new AltoRouter();
 $router->setBasePath("/CoffeeShop/public"); 
 
 // var_dump($router); 
+// die();
 
 // Définir les URLs avec la fonction native de PHP
 $router->map('GET', '/', [ 

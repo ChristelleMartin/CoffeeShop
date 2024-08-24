@@ -1,3 +1,6 @@
+
+<h1>Entrez dans notre boutique</h1>
+
 <div class="section">
         <h2>Nos Variétés de Café</h2>
         <div class="products">

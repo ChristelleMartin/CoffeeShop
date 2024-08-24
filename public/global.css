@@ -8,6 +8,13 @@ body {
     background-position: center;
 }
 
+h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px auto;
+}
+
 nav {
     background-color: #6f4e37;
     padding: 20px;
@@ -35,7 +42,7 @@ nav a:hover {
     background: rgba(214, 213, 213, 0.678);
 }
 
-.header h1 {
+.header .title {
     font-size: 50px;
     font-weight: bold;
     margin: 0;

@@ -1,5 +1,8 @@
+
+<h1>L'art de la torrefaction</h1>
+
 <div class="section">
-        <h2>À propos de Fresh Coffee Shop</h2>
+        <h2>Notre histoire</h2>
         <div class="products">
         <div class="left">
             <img src="./img/coffee-man.jpg" alt="coffee man">
