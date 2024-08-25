@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recettes à base de café - Fresh Coffee Shop</title>
-</head>
-<body>
 
     <h1>Recettes à base de café</h1>
 
@@ -13,8 +5,8 @@
         <h2>1. Espresso Martini</h2>
         
 
-            <div class="recipes">
-                <?php foreach($viewData["recipes"] as $key => $recipe): ?>
+            <div class="recipe">
+
                     <div class="recipe-card">
                         <div class="recipe-ingredients">
                             <h3>Ingrédients :</h3>
@@ -32,11 +24,11 @@
                             <p>Mélangez la vodka, l'espresso, la liqueur de café et le sirop de sucre dans un shaker avec des glaçons. Secouez bien et filtrez dans un verre à martini. Décorez avec quelques grains de café.</p>
                         </div>
                     </div>
-                <?php endforeach; ?>
+
             </div>
 
-
-        
+                <!-- <?php foreach($viewData["recipes"] as $key => $recipe): ?> -->
+                        <!-- <?php endforeach; ?> -->
         
     </div>
 

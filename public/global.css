@@ -164,3 +164,17 @@ nav a:hover {
 .recipe p {
     margin-top: 0;
 }
+
+.recipe-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe-ingredients {
+    width: 40%;
+}
+
+.recipe-instructions {
+    width: 60%;
+}
