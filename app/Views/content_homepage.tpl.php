@@ -5,7 +5,7 @@
         <h2>Notre histoire</h2>
         <div class="products">
         <div class="left">
-            <img src="./img/coffee-man.jpg" alt="coffee man">
+            <img src="<?= $urlAbsolute ?>/img/coffee-man.jpg" alt="coffee man">
         </div>
         <div class="right">
         <p>Fondé en 1997, <strong>Fresh Coffee Shop</strong> est bien plus qu’un simple café. C’est une institution pour les amateurs de café qui recherchent une expérience authentique, où la passion et l'expertise se mêlent à chaque tasse. Depuis plus de deux décennies, nous nous engageons à offrir des cafés d’exception, soigneusement sélectionnés et torréfiés avec précision pour révéler toute la richesse des arômes.</p>
@@ -44,6 +44,6 @@
             <!-- Ajoutez ici les autres variétés de café -->
         </div>
         <div class="products">
-        <a class="btn" href="./products">Voir tous nos produits</a>
+        <a class="btn" href="<?= $urlAbsolute ?>/products">Voir tous nos produits</a>
         </div>
     </div>

@@ -28,6 +28,11 @@ $router->map('GET', '/products', [
     'controller' => 'mainController'], 
     'page_products');
 
+$router->map('GET', '/product/[i:product_id]', [ 
+    'method' => 'detailproduct', 
+    'controller' => 'mainController'], 
+    'page_product');
+
 $router->map('GET', '/recipes', [ 
     'method' => 'recipespage', 
     'controller' => 'mainController'], 
@@ -36,10 +41,13 @@ $router->map('GET', '/recipes', [
 // $match va contenir soit un tableau soit un booléen = false
 $match = $router->match();
 
+// $match["params"] va contenir les paramètres de l'URL (par ex. product_id)
+
 if($match !== false) {
     $matchRoute = $match['target'];
     $controller = $matchRoute['controller'];
     $method = $matchRoute['method'];
+
 } else {
 
     // si la route n'existe pas, on a une erreur 404
@@ -49,4 +57,4 @@ if($match !== false) {
 
 // Dispatcher
 $controller = new $controller();
-$controller->$method();
+$controller->$method($match["params"]);

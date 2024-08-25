@@ -1,7 +1,7 @@
 <?php
-    class Product {
+    class Recipe {
 
-    // La représentation sous forme d'objet de ma table dans la BDD : products
+    // La représentation sous forme d'objet de ma table dans la BDD : recipes
 
     // propriétés
 
@@ -25,7 +25,7 @@
         return $products;
     }
 
-    public function findById($id) {
+    public function find($id) {
         $sql = 'SELECT * FROM products WHERE id = '.$id;
         $pdo = Database::getPDO();
 

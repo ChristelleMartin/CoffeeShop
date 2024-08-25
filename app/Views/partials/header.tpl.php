@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="<?= $urlAbsolute ?>/global.css">
     <title>Coffee Shop - Accueil</title>
 </head>
 <body>
@@ -14,8 +14,8 @@
     </div>
 
     <nav>
-        <a href="./">Accueil</a>
-        <a href="./products">Produits</a>
-        <a href="./recipes">Idées de recettes</a>
+        <a href="<?= $urlAbsolute ?>/">Accueil</a>
+        <a href="<?= $urlAbsolute ?>/products">Produits</a>
+        <a href="<?= $urlAbsolute ?>/recipes">Idées de recettes</a>
         <a href="#">Contact</a>
     </nav>

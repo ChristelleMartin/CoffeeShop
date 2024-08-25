@@ -18,11 +18,32 @@
          */
         public function productspage() {
             
-            // Instancier le model Product qui interagit avec la DB
+            // Instancier le Model Product.php qui interagit avec la DB
             $productModel = new Product();
             $productsFromModel = $productModel->findAll();
 
             $this->show("content_products", [ "products" => $productsFromModel ]);
+        }
+
+        /**
+         * Affichage de la page product 
+         *
+         * @return void
+         */
+        public function detailproduct($urlParams) {
+            // Récupération du paramètre dynamique product_id défini dans index.php
+            $productId = $urlParams["product_id"];
+
+            // Récupération du produit dans la DB
+            // SELECT * FROM product WHERE id = $productId
+            $productModel = new Product();
+            $productFromModel = $productModel->findById($productId);
+
+            $data = [
+                'product' => $productFromModel  // contient un objet de la class Product
+            ];
+
+            $this->show("detail_product", $data);
         }
 
         /**
@@ -35,6 +56,9 @@
         }
 
         private function show($viewPage, $viewData = []) {
+
+            // Récupérer le sous-chemin du localhost
+            $urlAbsolute = $_SERVER["BASE_URI"];
 
             require __DIR__ . "/../Views/partials/header.tpl.php";
             require __DIR__ . "/../Views/$viewPage.tpl.php";
