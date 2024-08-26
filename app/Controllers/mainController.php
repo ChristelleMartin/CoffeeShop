@@ -26,7 +26,7 @@
         }
 
         /**
-         * Affichage de la page product 
+         * Affichage de la page product/[id] 
          *
          * @return void
          */
@@ -52,7 +52,12 @@
          * @return void
          */
         public function recipespage() {
-            $this->show("content_recipes");
+
+            // Instancier le Model Recipe.php qui interagit avec la DB
+            $recipeModel = new Recipe();
+            $recipesFromModel = $recipeModel->findAll();
+
+            $this->show("content_recipes", [ "recipes" => $recipesFromModel ]);
         }
 
         private function show($viewPage, $viewData = []) {

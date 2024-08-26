@@ -1,40 +1,44 @@
 <?php
     class Recipe {
 
-    // La représentation sous forme d'objet de ma table dans la BDD : recipes
+    // La représentation sous forme d'objet de ma table dans la BDD : recipe
 
     // propriétés
 
     private $id;
-    private $title;
-    private $subtitle;
-    private $picture;
+    private $name;
+    private $instructions;
+    private $published_at;
 
     // méthodes
 
     // Les actives records (find / findAll)
     public function findAll() {
-        $sql = 'SELECT * FROM products';
+        $sql = 'SELECT * FROM recipe';
         $pdo = Database::getPDO();
 
         $pdoStatement = $pdo->query($sql);
 
-        // un tableau d'objets de la class Product
-        $products = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Product');
+        // un tableau d'objets de la class Recipe
+        $recipes = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Recipe');
 
-        return $products;
+        return $recipes;
     }
 
-    public function find($id) {
-        $sql = 'SELECT * FROM products WHERE id = '.$id;
-        $pdo = Database::getPDO();
+    public function findById($id) {
+        $sql = 'SELECT * FROM recipe WHERE id = :id';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute(['id' => $id]);
 
-        $pdoStatement = $pdo->query($sql);
+        // $sql = 'SELECT * FROM recipe WHERE id = '.$id;
+        // $pdo = Database::getPDO();
 
-        // l'objet de la class Product qui correspond à l'id
-        $product = $pdoStatement->fetchObject('Product');
+        // $pdoStatement = $pdo->query($sql);
 
-        return $product;
+        // l'objet de la class recipe qui correspond à l'id
+        $recipe = $pdoStatement->fetchObject('Recipe');
+
+        return $recipe;
     }
 
     // Les getters et les setters
@@ -60,61 +64,61 @@
     }
 
     /**
-     * Get the value of title
+     * Get the value of name
      */
-    public function getTitle()
+    public function getName()
     {
-        return $this->title;
+        return $this->name;
     }
 
     /**
-     * Set the value of title
+     * Set the value of name
      * 
      * @return self
      */
-    public function setTitle($title)
+    public function setName($name)
     {
-        $this->title = $title;
+        $this->name = $name;
         
         return $this;
     }
 
         /**
-     * Get the value of title
+     * Get the value of name
      */
-    public function getSubtitle()
+    public function getInstructions()
     {
-        return $this->subtitle;
+        return $this->instructions;
     }
 
     /**
-     * Set the value of title
+     * Set the value of name
      * 
      * @return self
      */
-    public function setSubtitle($subtitle)
+    public function setInstructions($instructions)
     {
-        $this->subtitle = $subtitle;
+        $this->instructions = $instructions;
         
         return $this;
     }
 
     /**
-     * Get the value of picture
+     * Get the value of published_at
      */
-    public function getPicture()
+    public function getPublished_at()
     {
-        return $this->picture;
+        return $this->published_at;
     }
 
     /**
-     * Set the value of picture
+     * Set the value of published_at
      * 
      * @return self
      */
-    public function setPicture($picture)
+    public function setPublished_at($published_at)
     {
-        $this->picture = $picture;
+        $this->published_at = $published_at;
         
         return $this;
     }
