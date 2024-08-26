@@ -6,14 +6,11 @@
         <div class="recipe">
             <div class="recipe-card">
                 <div class="recipe-ingredients">
-                    <h3>Ingrédients (à dynamiser):</h3>
+                <h3>Ingrédients :</h3>
                     <ul>
-                        <li>50 ml de vodka</li>
-                        <li>30 ml d'espresso fraîchement préparé</li>
-                        <li>20 ml de liqueur de café</li>
-                        <li>5 ml de sirop de sucre</li>
-                        <li>Glaçons</li>
-                        <li>Grains de café pour la décoration</li>
+                        <?php foreach($recipe->getIngredients() as $ingredient): ?>
+                            <li><?= ($ingredient['quantity_for_each_ingredient']) ?> - <?= htmlspecialchars($ingredient['name']) ?></li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <div class="recipe-instructions">

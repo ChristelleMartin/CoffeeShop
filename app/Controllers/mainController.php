@@ -57,6 +57,11 @@
             $recipeModel = new Recipe();
             $recipesFromModel = $recipeModel->findAll();
 
+            // Pour chaque recette, on récupère ses ingrédients
+        foreach ($recipesFromModel as $recipe) {
+            $recipe->findIngredients();
+        }
+
             $this->show("content_recipes", [ "recipes" => $recipesFromModel ]);
         }
 
