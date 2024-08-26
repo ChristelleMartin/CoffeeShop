@@ -15,8 +15,6 @@ require __DIR__ . "/../app/Models/Recipe.php";
 $router = new AltoRouter();
 $router->setBasePath("/CoffeeShop/public"); 
 
-// var_dump($router); 
-// die();
 
 // Définir les URLs avec la fonction native de PHP
 $router->map('GET', '/', [ 

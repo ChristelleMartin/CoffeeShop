@@ -1,8 +1,9 @@
 # CoffeeShop
-Exercice de dynamisation avec bdd et architecture MVC
+Exercice de dynamisation avec bdd et architecture MVC.
+Le html et le css sont rudimentaires, ce n'est pas l'objet principal de cet exercice.
 
-## Contexte / rappel des définitions
-Créer une application comportant une page d'accueil et une page affichant la liste des produits
+## Contexte / Rappel des définitions
+Créer une application comportant une page d'accueil, une page produits et une page de recettes.
 
 L’architecture MVC (Modèle-Vue-Contrôleur) est un modèle de conception qui sépare une application en trois composants principaux : cette séparation facilite la gestion, la maintenance et la scalabilité de l’application.
 
@@ -19,24 +20,17 @@ Etablir les routes
 Utiliser les fichiers html
 
 ### 3e étape : mettre en place les controllers avec les classes
-Gestion de la logique PHP
+Gérer la logique PHP
 
 ### 4e étape : mettre en place la modélisation de la BDD
 MCD / Mocodo / Entités / Relations ...
 Créer la bdd dans Adminer
 
-CREATE TABLE PRODUCTS (
-    id INT AUTO_INCREMENT,
-    title VARCHAR(200) NOT NULL,
-    subtitle VARCHAR(255) NOT NULL,
-    picture VARCHAR(255),
-    PRIMARY KEY (id)
-)
-
 ### 5e étape : créer les modèles pour récupérer les données de la BDD
-Models/Product.php => lié à la table product de la bdd
+Models/Product.php => lié à la table products de la bdd
+Models/Recipes.php => lié à la table recipe de la bdd
 
 ### 6e étape : utiliser les modèles
 Instancier les modèles pour donner aux vues les données de la bdd à utiliser
 Passage de paramètres et d'arguments entre index.php et les controllers :
-Controller => instancier le modèle et appeler la vue en lui transmettant les données à utiliser
+Controller => instancier le modèle et appeler la vue en lui transmettant les données à utiliser.

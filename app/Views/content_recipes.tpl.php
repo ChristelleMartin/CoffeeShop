@@ -9,14 +9,14 @@
                 <h3>Ingrédients :</h3>
                     <ul>
                         <?php foreach($recipe->getIngredients() as $ingredient): ?>
-                            <li><?= ($ingredient['quantity_for_each_ingredient']) ?> - <?= htmlspecialchars($ingredient['name']) ?></li>
+                            <li><?= htmlspecialchars($ingredient['name']) ?> : <?= ($ingredient['quantity_for_each_ingredient']) ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
                 <div class="recipe-instructions">
                     <h3>Instructions :</h3>
                     <p><?= htmlspecialchars($recipe->getInstructions()) ?></p><br>
-                    <p>Date d'ajout : <?= date('d/m/Y', strtotime($recipe->getPublished_at())) ?></p>
+                    <p>Recette ajoutée le : <?= date('d/m/Y', strtotime($recipe->getPublished_at())) ?></p>
                 </div>
             </div>
         </div>

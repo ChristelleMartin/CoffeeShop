@@ -4,18 +4,18 @@
 <div class="section">
         <h2>Notre histoire</h2>
         <div class="products">
-        <div class="left">
-            <img src="<?= $urlAbsolute ?>/img/coffee-man.jpg" alt="coffee man">
-        </div>
-        <div class="right">
-        <p>Fondé en 1997, <strong>Fresh Coffee Shop</strong> est bien plus qu’un simple café. C’est une institution pour les amateurs de café qui recherchent une expérience authentique, où la passion et l'expertise se mêlent à chaque tasse. Depuis plus de deux décennies, nous nous engageons à offrir des cafés d’exception, soigneusement sélectionnés et torréfiés avec précision pour révéler toute la richesse des arômes.</p>
-    
-        <p>Situé au cœur de la ville, notre établissement se distingue par son atmosphère chaleureuse et conviviale, où chaque visiteur se sent immédiatement chez soi. Que vous soyez un passionné de café ou simplement à la recherche d’un lieu de détente, Fresh Coffee Shop est l’endroit idéal pour savourer un moment de plaisir.</p>
+            <div class="left">
+                <img src="<?= $urlAbsolute ?>/img/coffee-man.jpg" alt="coffee man">
+            </div>
+            <div class="right">
+            <p>Fondé en 1997, <strong>Fresh Coffee Shop</strong> est bien plus qu’un simple café. C’est une institution pour les amateurs de café qui recherchent une expérience authentique, où la passion et l'expertise se mêlent à chaque tasse. Depuis plus de deux décennies, nous nous engageons à offrir des cafés d’exception, soigneusement sélectionnés et torréfiés avec précision pour révéler toute la richesse des arômes.</p>
+        
+            <p>Situé au cœur de la ville, notre établissement se distingue par son atmosphère chaleureuse et conviviale, où chaque visiteur se sent immédiatement chez soi. Que vous soyez un passionné de café ou simplement à la recherche d’un lieu de détente, Fresh Coffee Shop est l’endroit idéal pour savourer un moment de plaisir.</p>
 
-        <p>Nos cafés proviennent des meilleures plantations du monde, choisies pour leur qualité supérieure et leur caractère unique. Nous proposons une gamme variée de boissons, allant des classiques comme l’espresso et le cappuccino, aux créations plus innovantes pour satisfaire tous les goûts. De plus, nos baristas expérimentés sont toujours prêts à partager leur savoir-faire et à vous conseiller pour trouver la boisson parfaite.</p>
+            <p>Nos cafés proviennent des meilleures plantations du monde, choisies pour leur qualité supérieure et leur caractère unique. Nous proposons une gamme variée de boissons, allant des classiques comme l’espresso et le cappuccino, aux créations plus innovantes pour satisfaire tous les goûts. De plus, nos baristas expérimentés sont toujours prêts à partager leur savoir-faire et à vous conseiller pour trouver la boisson parfaite.</p>
 
-        <p>Au-delà du café, nous offrons également une sélection de pâtisseries artisanales et de snacks préparés avec des ingrédients frais et locaux. Chez Fresh Coffee Shop, chaque détail compte, du grain de café à l’ambiance cosy, pour faire de chaque visite une expérience inoubliable. Venez découvrir pourquoi, depuis 1997, nous sommes la référence en matière de café dans la région.</p>
-        </div>
+            <p>Au-delà du café, nous offrons également une sélection de pâtisseries artisanales et de snacks préparés avec des ingrédients frais et locaux. Chez Fresh Coffee Shop, chaque détail compte, du grain de café à l’ambiance cosy, pour faire de chaque visite une expérience inoubliable. Venez découvrir pourquoi, depuis 1997, nous sommes la référence en matière de café dans la région.</p>
+            </div>
 
         </div>
         
