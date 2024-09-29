@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 .left img {
-    min-width: 400px;
+    min-width: 200px;
 }
 .right {
     max-width: 600px;
@@ -86,6 +86,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .products {

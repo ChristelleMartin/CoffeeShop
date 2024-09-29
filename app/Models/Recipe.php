@@ -28,6 +28,7 @@
 
     public function findById($id) {
         $sql = 'SELECT * FROM recipe WHERE id = :id';
+        $pdo = Database::getPDO();
         $pdoStatement = $pdo->prepare($sql);
         $pdoStatement->execute(['id' => $id]);
 
